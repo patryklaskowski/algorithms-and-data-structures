@@ -2,6 +2,7 @@ import unittest
 import string
 
 from data_structures.hash_table import HashTable
+from tests.common import random_letters
 
 
 class TestHashTable(unittest.TestCase):
@@ -17,11 +18,9 @@ class TestHashTable(unittest.TestCase):
         self.assertEqual(self.hash_table.length, self.mock_length)
 
     def test_inserting_values(self):
-        self.hash_table['key'] = 'value'
-        self.assertEqual(self.hash_table['key'], 'value')
-
-        self.hash_table['a'] = 'b'
-        self.assertEqual(self.hash_table['a'], 'b')
+        for letter in random_letters(10):
+            self.hash_table[letter] = letter
+            self.assertEqual(self.hash_table[letter], letter)
 
     def test_override_existing_key_value_pair(self):
         mock_key = 'foo'

@@ -13,6 +13,7 @@
 - [ ] Reverse a linked list.
 - [ ] Are cycles in a graph?
 
+
 ## 2) Data structures:
 - [x] Hash table.
 - [ ] Linked list
