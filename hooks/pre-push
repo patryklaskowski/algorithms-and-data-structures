@@ -1,0 +1,29 @@
+#!/bin/sh
+# Should be placed on path .git/hooks/pre-push
+
+echo "----------------------------------------------------------------------"
+echo "Running custom pre-push hook..."
+echo "Path: $(pwd)"
+
+remote="$1"
+url="$2"
+
+UNIT_TESTS_SCRIPT="run_unit_tests.sh"
+
+echo "----------------------------------------------------------------------"
+echo "Running unit tests script: $UNIT_TESTS_SCRIPT"
+
+source $UNIT_TESTS_SCRIPT
+UNIT_TESTS_ERR_CODE=$?
+
+if [ $UNIT_TESTS_ERR_CODE != 0 ]
+then
+  echo ""
+  echo "Unit tests does not pass, not pushing."
+  exit 1
+fi
+
+echo "----------------------------------------------------------------------"
+echo "All good, pushing changes"
+
+exit 0
