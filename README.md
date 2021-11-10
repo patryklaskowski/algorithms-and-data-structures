@@ -7,17 +7,19 @@
 - [x] Find a first recurring element.
 - [x] Merge sorted arrays.
 - [ ] Find all value pairs among list of values that sum up to provided value. 
-- [ ] Find n-th factorial (iterative and recursive).
+- [x] Find n-th factorial (iterative and recursive).
 - [ ] Find n-th Fibonacci element (recursive with memoization)
 - [ ] Is element existing in binary tree?
 - [ ] Reverse a linked list.
 - [ ] Are cycles in a graph?
 
-
 ## 2) Data structures:
 - [x] Hash table.
+- [x] Stack (FILO)
+- [ ] Queue (FIFO)
 - [ ] Linked list
-- [ ] Binary tree
+- [ ] Doubly linked list
+- [ ] Binary search tree
 - [ ] Heap (min and max)
 
 ## 3) Algorithms:

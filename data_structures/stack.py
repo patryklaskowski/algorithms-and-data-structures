@@ -1,6 +1,10 @@
 """
 Stack implementation using linked list.
-Stack implementation using arrays is bad idea because of O(n) time complexity
+
+Pop: O(1)
+Push: O(1)
+Peek: O(1)
+Lookup: O(n)
 """
 from dataclasses import dataclass
 
@@ -61,4 +65,5 @@ class Stack:
         return top_value
 
     def empty(self) -> bool:
+        """Is object empty?"""
         return self.length == 0

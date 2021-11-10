@@ -15,7 +15,6 @@ class TestNode(unittest.TestCase):
             self.assertEqual(n.next, None)
 
     def test_node_next_value_assignment(self):
-        """node_a -> node_b -> None"""
         for value_a in random_values(5):
             node_a = Node(value_a)
             self.assertEqual(node_a.value, value_a)
@@ -42,18 +41,18 @@ class TestStack(unittest.TestCase):
         self.assertEqual(self.stack.bottom, None)
         self.assertEqual(self.stack.length, 0)
 
-    def test_push_method(self):
+    def test_adding_values(self):
         for idx, value in enumerate(random_values(10), start=1):
             self.stack.push(value)
             self.assertEqual(self.stack.length, idx)
 
-    def test_peek_method(self):
+    def test_checking_values(self):
         self.assertEqual(self.stack.peek(), None)
         for value in random_values(10):
             self.stack.push(value)
             self.assertEqual(self.stack.peek(), value)
 
-    def test_pop_method_with_one_element(self):
+    def test_deleting_values_with_one_element(self):
         self.assertEqual(self.stack.pop(), None)
         for value in random_values(10):
             self.stack.push(value)
