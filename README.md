@@ -12,6 +12,7 @@
 - [ ] Is element existing in binary tree?
 - [ ] Reverse a linked list.
 - [ ] Are cycles in a graph?
+- [x] FizzBuzz
 
 ## 2) Data structures:
 - [x] Hash table.
