@@ -11,7 +11,7 @@
 - [ ] Find n-th Fibonacci element (recursive with memoization)
 - [ ] Is element existing in binary tree?
 - [ ] Reverse a linked list.
-- [ ] Are cycles in a graph?
+- [ ] Are cycles in undirected graph?
 - [x] FizzBuzz
 
 ## 2) Data structures:
