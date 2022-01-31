@@ -1,0 +1,13 @@
+#!/bin/bash
+
+python3 -m unittest -v
+
+exit_status_code=$(echo $?)
+
+if exit_status_code != 0
+then
+	exit 1
+fi
+
+exit 0
+
